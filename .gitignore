@@ -1,0 +1,9 @@
+./inputs
+./output
+./outputs
+./results
+
+/node_modules
+/dist
+
+package-lock.json

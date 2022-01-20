@@ -1,0 +1,32 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "npm run && k6 run --out influxdb=http://admin:password@23.101.72.31:8086/ach_tests ./src/script.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "webpack"
+  },
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-loader": "^8.2.3",
+    "core-js": "^3.19.3",
+    "k6": "^0.0.0",
+    "nodemon": "^2.0.15",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.9",
+    "file-system": "^2.2.2",
+    "fs-web": "^1.0.1",
+    "graceful-fs": "^4.2.9",
+    "lodash": "^4.17.21",
+    "path": "^0.12.7"
+  }
+}
