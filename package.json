@@ -4,7 +4,7 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "start": "npm run bundle && k6 run --out influxdb=http://admin:password@23.101.72.31:8086/ach_tests --logformat=json --http-debug=full --log-output=loki=http://23.101.72.31:3100/loki/api/v1/push ./dist/script.bundle.js",
+    "start": "k6 run --out influxdb=http://admin:password@23.101.72.31:8086/ach_tests --logformat=json --http-debug=full --log-output=loki=http://23.101.72.31:3100/loki/api/v1/push ./src/script.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "bundle": "webpack"
   },

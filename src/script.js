@@ -3,7 +3,7 @@ import { check, sleep } from 'k6';
 import { SharedArray } from 'k6/data';
 import { regeneratePayload } from './utils/index.js';
 
-const filePath = '../inputs/ACH/AccountEnquiry/somefile.json';
+const filePath = '../inputs/testfile.json';
 // const filePath = '../inputs/ACH/AccountEnquiry/123/requests-to-123.json';
 const url = "https://account-enquiry.sw.redtechlimited.com:443/v1/account/enquiry";
 
