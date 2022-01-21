@@ -5,11 +5,12 @@ import { regeneratePayload } from './utils/index.js';
 
 const filePath = '../inputs/testfile.json';
 // const filePath = '../inputs/ACH/AccountEnquiry/123/requests-to-123.json';
-const url = "https://account-enquiry.sw.redtechlimited.com:443/v1/account/enquiry";
+// const url = "https://account-enquiry.sw.redtechlimited.com:443/v1/account/enquiry";
+const url = "https://api.sw.redtechlimited.com/v1/account/enquiry";
 
 export const options = {
-  vus: 100,
-  iterations: 1000,
+  vus: 1,
+  iterations: 1,
 };
 
 const data = new SharedArray('good-data', function () {
@@ -26,7 +27,8 @@ export default function () {
     const params = {
       headers: {
         'Content-Type': 'application/json',
-        "Accept": "application/json"
+        "Accept": "application/json",
+        "key": 'Impe73637889emeritus'
         },
     };
   
