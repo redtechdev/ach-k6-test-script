@@ -4,9 +4,7 @@ import { SharedArray } from 'k6/data';
 import { regeneratePayload } from './utils/index.js';
 
 const filePath = '../inputs/testfile.json';
-// const filePath = '../inputs/ACH/AccountEnquiry/123/requests-to-123.json';
-// const url = "https://account-enquiry.sw.redtechlimited.com:443/v1/account/enquiry";
-const url = "https://api.sw.redtechlimited.com/v1/account/enquiry";
+const url = process.env.SW_REDTECH_API_ENDPOINT + "/account/enquiry";
 
 export const options = {
   vus: 1,
